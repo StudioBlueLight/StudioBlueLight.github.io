@@ -1,1 +1,194 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Blue Light</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Studio Blue Light</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Studio Blue Light</h1>
+        <p>Dive into Sci-Fi Mysteries</p>
+        <a href="#games" class="btn">Explore Our Games</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Studio Blue Light, we craft immersive visual novels that blend sci-fi elements with gripping mysteries.</p>
+        <div class="team">
+            <div class="member">
+                <img src="team1.jpg" alt="Team Member 1">
+                <h3>Jane Doe</h3>
+                <p>Lead Writer</p>
+            </div>
+            <div class="member">
+                <img src="team2.jpg" alt="Team Member 2">
+                <h3>John Smith</h3>
+                <p>Creative Director</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="games">
+        <h2>Our Games</h2>
+        <div class="game">
+            <img src="game1.jpg" alt="Game 1">
+            <h3>Echoes of Tomorrow</h3>
+            <p>An epic sci-fi mystery visual novel.</p>
+            <a href="game1.html" class="btn">Learn More</a>
+        </div>
+        <div class="game">
+            <img src="game2.jpg" alt="Game 2">
+            <h3>Starlight Shadows</h3>
+            <p>Unravel the secrets of a distant galaxy.</p>
+            <a href="game2.html" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Latest News</h2>
+        <article>
+            <h3>New Game Announcement</h3>
+            <p>We're excited to reveal our latest project, Echoes of Tomorrow. Stay tuned for more details!</p>
+            <a href="blog.html" class="btn">Read More</a>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Studio Blue Light. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            background-color: #000022;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #001144;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0 0 20px;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 0 0 20px;
+        }
+        .hero .btn {
+            padding: 10px 20px;
+            background-color: #0077ff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .member {
+            text-align: center;
+        }
+        .member img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .game {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        .game img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .game .btn {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #0077ff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            padding: 20px;
+            background-color: #001144;
+            text-align: center;
+        }
+        .social-media a {
+            margin: 0 10px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</body>
+</html>
